@@ -1,0 +1,51 @@
+/* Navigation bar */
+
+nav {
+  display: flex;
+  background-color: #ff6600;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 3px 3px 0 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+/* SUBPART 2B.2.2 get the main nav links on the bar */
+.main-nav-links {
+  margin: 0 10px;
+  font-size: 0.85rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  margin: 0 0 0.3px;
+  display: inline-block;
+  padding: 0 1px;
+  position: relative;
+}
+.hidden-nav-link {
+  font-size: 0.85rem;
+  margin: 0 0 0 0.3px;
+  padding: 0 0 0 0;
+  display: inline-block;
+  padding: 0 1px 0 4px;
+  position: relative;
+}
+
+.hidden-nav-link:before {
+  content: "";
+  border: 1px solid #000000;
+  border-width: 1px 1px 1px 1px;
+  position: absolute; /* Use absolute positioning to control the pseudo-element more precisely */
+  left: -2px;
+  top: 0px; /* Adjust this value to move the line down */
+  height: 80%; /* Decrease the height to reduce the length on the top */
+}
+
+.nav-right {
+  margin-left: auto;
+  text-align: right;
+}
